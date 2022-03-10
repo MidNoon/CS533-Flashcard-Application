@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/card_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/card_back"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/card_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <include layout="@layout/card_front"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/PlusButton"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom|right"
+        android:background="#FFEB3B"
+        android:src="@drawable/ic_iconmonstr_clipboard_8"/>
+    <!--android:onClick="addCard"-->
+
+    <Button
+        android:id="@+id/show_db"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/PlusButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="111dp"
+        android:layout_gravity="top"
+        android:text="Credits"
+        />
+
+    <ImageView
+        android:id="@+id/nextbutton"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom"
+        android:background="#03A9F4"
+        android:src="@drawable/ic_iconmonstr_arrow_45"/>
+    <!--android:onClick="nextCard"-->
+
+</FrameLayout>
